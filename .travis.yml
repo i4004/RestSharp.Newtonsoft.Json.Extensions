@@ -1,0 +1,15 @@
+branches:
+ only:
+  - master
+
+git:
+ depth: 1
+
+install:
+ - mono .nuget/NuGet.exe restore RestSharp.Newtonsoft.Json.Extensions.sln
+
+language: csharp
+solution: RestSharp.Newtonsoft.Json.Extensions.sln
+
+script:
+ - xbuild /p:Platform="Any CPU" /p:Configuration=Release RestSharp.Newtonsoft.Json.Extensions.sln /tv:12.0
