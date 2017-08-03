@@ -1,7 +1,14 @@
 ﻿namespace RestSharp.Newtonsoft.Json.Extensions
 {
+	/// <summary>
+	/// Provides RestClient Newtonsoft.Json extensions
+	/// </summary>
 	public static class RestClientExtensions
 	{
+		/// <summary>
+		/// Uses the Newtonsoft.Json serializer as deserializer for IRestClient.
+		/// </summary>
+		/// <param name="client">The client.</param>
 		public static void UseNewtonsoftJsonSerializer(this IRestClient client)
 		{
 			var deserializer = NewtonsoftJsonSerializer.Default;
