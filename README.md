@@ -1,4 +1,4 @@
-Owin.Security.AesDataProtectorProvider
+RestSharp.Newtonsoft.Json.Extensions
 ===
 
 `RestSharp.Newtonsoft.Json.Extensions` - is a RestSharp extensions to use Newtonsoft.Json for serialization/deserialization .
