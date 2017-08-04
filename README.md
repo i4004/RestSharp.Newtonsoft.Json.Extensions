@@ -5,7 +5,7 @@ RestSharp.Newtonsoft.Json.Extensions
 
 ## Package status
 
-| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.0-blue.png)](https://www.nuget.org/packages/RestSharp.Newtonsoft.Json.Extensions/) |
+| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.0.1-blue.png)](https://www.nuget.org/packages/RestSharp.Newtonsoft.Json.Extensions/) |
 | :------ | :------: |
 | **Dependencies** | [![NuGet Status](http://nugetstatus.com/RestSharp.Newtonsoft.Json.Extensions.png)](http://nugetstatus.com/packages/RestSharp.Newtonsoft.Json.Extensions) |
 
