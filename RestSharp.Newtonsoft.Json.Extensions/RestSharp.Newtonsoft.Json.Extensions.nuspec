@@ -11,6 +11,8 @@
 		<description>$description$</description>
 		<summary>$description$</summary>
 		<releaseNotes>
+			* NewtonsoftJsonSerializer.Default Converted to ambient context
+			* Client extension renamed
 		</releaseNotes>
 		<copyright>Licensed under LGPL</copyright>
 		<language>en-US</language>

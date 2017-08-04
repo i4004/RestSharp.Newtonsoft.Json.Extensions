@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using Newtonsoft.Json;
 using RestSharp.Deserializers;
 using RestSharp.Serializers;
@@ -12,6 +13,8 @@ namespace RestSharp.Newtonsoft.Json.Extensions
 	/// <seealso cref="IDeserializer" />
 	public class NewtonsoftJsonSerializer : ISerializer, IDeserializer
 	{
+		private static NewtonsoftJsonSerializer _default;
+
 		private readonly global::Newtonsoft.Json.JsonSerializer _serializer;
 
 		/// <summary>
@@ -24,15 +27,34 @@ namespace RestSharp.Newtonsoft.Json.Extensions
 		}
 
 		/// <summary>
-		/// Gets the default serializer.
+		/// Gets or sets the default serializer.
 		/// </summary>
 		/// <value>
-		/// The default.
+		/// The default serializer.
 		/// </value>
-		public static NewtonsoftJsonSerializer Default => new NewtonsoftJsonSerializer(new global::Newtonsoft.Json.JsonSerializer
+		/// <exception cref="System.NullReferenceException">value</exception>
+		public static NewtonsoftJsonSerializer Default
 		{
-			NullValueHandling = NullValueHandling.Ignore
-		});
+			get
+			{
+				if (_default != null)
+					return _default;
+
+				_default = new NewtonsoftJsonSerializer(new global::Newtonsoft.Json.JsonSerializer
+				{
+					NullValueHandling = NullValueHandling.Ignore
+				});
+
+				return _default;
+			}
+			set
+			{
+				if (value == null)
+					throw new NullReferenceException(nameof(value));
+
+				_default = value;
+			}
+		}
 
 		/// <summary>
 		/// Gets or sets the type of the content.

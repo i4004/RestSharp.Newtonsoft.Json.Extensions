@@ -6,10 +6,10 @@
 	public static class RestClientExtensions
 	{
 		/// <summary>
-		/// Uses the Newtonsoft.Json serializer as deserializer for IRestClient.
+		/// Uses the Newtonsoft.Json deserializer as deserializer for IRestClient.
 		/// </summary>
 		/// <param name="client">The client.</param>
-		public static void UseNewtonsoftJsonSerializer(this IRestClient client)
+		public static void UseNewtonsoftJsonDeserializer(this IRestClient client)
 		{
 			var deserializer = NewtonsoftJsonSerializer.Default;
 

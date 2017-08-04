@@ -29,6 +29,6 @@ request.UseNewtonsoftJsonSerializer();
 
 ```csharp
 IRestClient сlient = /* ... */;
-client.UseNewtonsoftJsonSerializer();
+client.UseNewtonsoftJsonDeserializer();
 ```
 
