@@ -8,8 +8,8 @@ namespace RestSharp.Newtonsoft.Json.Extensions
 	/// <summary>
 	/// Provides Newtonsoft.Json serializer implementation for RestSharp
 	/// </summary>
-	/// <seealso cref="RestSharp.Serializers.ISerializer" />
-	/// <seealso cref="RestSharp.Deserializers.IDeserializer" />
+	/// <seealso cref="ISerializer" />
+	/// <seealso cref="IDeserializer" />
 	public class NewtonsoftJsonSerializer : ISerializer, IDeserializer
 	{
 		private readonly global::Newtonsoft.Json.JsonSerializer _serializer;
