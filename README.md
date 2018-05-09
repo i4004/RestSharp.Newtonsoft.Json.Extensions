@@ -11,7 +11,7 @@ RestSharp.Newtonsoft.Json.Extensions
 
 ## Build status
 
-| Branch | **.NET (4.5.2)** |
+| Branch | **.NET 4.5.2, Standard 2.0** |
 | :------ | :------: |
 | **master** | [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/tw195dxk1m917pc3?svg=true)](https://ci.appveyor.com/project/i4004/restsharp-newtonsoft-json-extensions) |
 

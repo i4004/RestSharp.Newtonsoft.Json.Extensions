@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net452</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
 		<Authors>Alexander Krylkov</Authors>
 		<Product>Simplify</Product>
 		<Description>RestSharp extensions to use Newtonsoft.Json for serialization/deserialization</Description>
@@ -12,12 +12,15 @@
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>JSON RestSharp</PackageTags>
 		<PackageReleaseNotes>
+			+ .NET Standard 2.0 support
+			* Upgrade to RestSharp 106.2.2
+			* Upgrade to Newtonsoft.Json 11.0.2
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\RestSharp.Newtonsoft.Json.Extensions.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="RestSharp" Version="105.2.3" />
-		<PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+		<PackageReference Include="RestSharp" Version="106.2.2" />
+		<PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
 	</ItemGroup>
 </Project>
