@@ -5,16 +5,16 @@ RestSharp.Newtonsoft.Json.Extensions
 
 ## Package status
 
-| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.0.1-blue.png)](https://www.nuget.org/packages/RestSharp.Newtonsoft.Json.Extensions/) |
+| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.0.2-blue.png)](https://www.nuget.org/packages/RestSharp.Newtonsoft.Json.Extensions/) |
 | :------ | :------: |
 | **Dependencies** | [![NuGet Status](http://nugetstatus.com/RestSharp.Newtonsoft.Json.Extensions.png)](http://nugetstatus.com/packages/RestSharp.Newtonsoft.Json.Extensions) |
 
 ## Build status
 
-| Platform | Status of last build |
+| Branch | **.NET (4.5.2)** |
 | :------ | :------: |
-| **.NET (4.5.2)** | [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/tw195dxk1m917pc3?svg=true)](https://ci.appveyor.com/project/i4004/restsharp-newtonsoft-json-extensions) |
-| **Mono (Latest)** | [![Travis build status](https://travis-ci.org/i4004/RestSharp.Newtonsoft.Json.Extensions.png?branch=master)](https://travis-ci.org/i4004/RestSharp.Newtonsoft.Json.Extensions) |
+| **master** | [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/tw195dxk1m917pc3?svg=true)](https://ci.appveyor.com/project/i4004/restsharp-newtonsoft-json-extensions) |
+
 
 ## Usage
 

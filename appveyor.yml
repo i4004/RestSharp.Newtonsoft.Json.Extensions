@@ -1,14 +1,21 @@
 version: '{build}'
+
+image: Visual Studio 2017
+
 branches:
   only:
   - master
+  - develop
+
 skip_tags: true
+clone_depth: 1
+
 configuration: Release
 platform: Any CPU
-image: Visual Studio 2017
-clone_depth: 1
+
 before_build:
 - cmd: '".nuget/NuGet.exe" restore RestSharp.Newtonsoft.Json.Extensions.sln'
+
 build:
   publish_nuget: true
   parallel: true
