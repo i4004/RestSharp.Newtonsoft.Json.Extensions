@@ -1,7 +1,7 @@
 RestSharp.Newtonsoft.Json.Extensions
 ===
 
-`RestSharp.Newtonsoft.Json.Extensions` - is a RestSharp extensions to use Newtonsoft.Json for serialization/deserialization.
+`RestSharp.Newtonsoft.Json.Extensions` - is an extensions for RestSharp to use Newtonsoft.Json for serialization/deserialization.
 
 ## Package status
 
