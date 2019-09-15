@@ -7,7 +7,6 @@
 		<Copyright>Licensed under LGPL</Copyright>
 		<Version>1.0.2</Version>
 		<PackageProjectUrl>https://github.com/i4004/RestSharp.Newtonsoft.Json.Extensions</PackageProjectUrl>
-		<PackageIconUrl>https://raw.githubusercontent.com/i4004/Simplify.Web/master/Images/Icon.png</PackageIconUrl>
 		<RepositoryUrl>https://github.com/i4004/RestSharp.Newtonsoft.Json.Extensions</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>JSON RestSharp</PackageTags>
