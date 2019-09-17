@@ -1,8 +1,8 @@
-﻿using System;
-using System.IO;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using RestSharp.Deserializers;
 using RestSharp.Serializers;
+using System;
+using System.IO;
 
 namespace RestSharp.Newtonsoft.Json.Extensions
 {
@@ -15,13 +15,13 @@ namespace RestSharp.Newtonsoft.Json.Extensions
 	{
 		private static NewtonsoftJsonSerializer _default;
 
-		private readonly global::Newtonsoft.Json.JsonSerializer _serializer;
+		private readonly JsonSerializer _serializer;
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="NewtonsoftJsonSerializer"/> class.
 		/// </summary>
 		/// <param name="serializer">The serializer.</param>
-		public NewtonsoftJsonSerializer(global::Newtonsoft.Json.JsonSerializer serializer)
+		public NewtonsoftJsonSerializer(JsonSerializer serializer)
 		{
 			_serializer = serializer;
 		}
@@ -40,20 +40,14 @@ namespace RestSharp.Newtonsoft.Json.Extensions
 				if (_default != null)
 					return _default;
 
-				_default = new NewtonsoftJsonSerializer(new global::Newtonsoft.Json.JsonSerializer
+				_default = new NewtonsoftJsonSerializer(new JsonSerializer
 				{
 					NullValueHandling = NullValueHandling.Ignore
 				});
 
 				return _default;
 			}
-			set
-			{
-				if (value == null)
-					throw new NullReferenceException(nameof(value));
-
-				_default = value;
-			}
+			set => _default = value ?? throw new NullReferenceException(nameof(value));
 		}
 
 		/// <summary>
