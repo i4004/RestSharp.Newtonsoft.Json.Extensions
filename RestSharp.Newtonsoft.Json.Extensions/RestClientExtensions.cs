@@ -13,11 +13,11 @@
 		{
 			var deserializer = NewtonsoftJsonSerializer.Default;
 
-			client.AddHandler("application/json", deserializer);
-			client.AddHandler("text/json", deserializer);
-			client.AddHandler("text/x-json", deserializer);
-			client.AddHandler("text/javascript", deserializer);
-			client.AddHandler("*+json", deserializer);
+			client.AddHandler("application/json", () => deserializer);
+			client.AddHandler("text/json", () => deserializer);
+			client.AddHandler("text/x-json", () => deserializer);
+			client.AddHandler("text/javascript", () => deserializer);
+			client.AddHandler("*+json", () => deserializer);
 		}
 	}
 }

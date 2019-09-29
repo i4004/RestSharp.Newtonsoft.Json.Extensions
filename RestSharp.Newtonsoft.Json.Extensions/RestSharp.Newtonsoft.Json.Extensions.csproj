@@ -5,21 +5,21 @@
 		<Product>Simplify</Product>
 		<Description>RestSharp extensions to use Newtonsoft.Json for serialization/deserialization</Description>
 		<Copyright>Licensed under LGPL</Copyright>
-		<Version>1.0.2</Version>
+		<Version>1.0.3</Version>
 		<PackageProjectUrl>https://github.com/i4004/RestSharp.Newtonsoft.Json.Extensions</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/i4004/RestSharp.Newtonsoft.Json.Extensions</RepositoryUrl>
+		<PackageIconUrl>https://raw.githubusercontent.com/restsharp/RestSharp/master/restsharp.png</PackageIconUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageTags>JSON RestSharp</PackageTags>
 		<PackageReleaseNotes>
-			+ .NET Standard 2.0 support
-			* Upgrade to RestSharp 106.2.2
-			* Upgrade to Newtonsoft.Json 11.0.2
+			* Upgrade to RestSharp 106.6.10
+			* Upgrade to Newtonsoft.Json 12.0.2
 		</PackageReleaseNotes>
 		<OutputPath>bin\Any CPU\$(Configuration)\</OutputPath>
 		<DocumentationFile>bin\Any CPU\$(Configuration)\$(TargetFramework)\RestSharp.Newtonsoft.Json.Extensions.xml</DocumentationFile>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="RestSharp" Version="106.2.2" />
-		<PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+		<PackageReference Include="RestSharp" Version="106.6.10" />
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
 	</ItemGroup>
 </Project>
