@@ -1,20 +1,13 @@
-RestSharp.Newtonsoft.Json.Extensions
-===
+# RestSharp.Newtonsoft.Json.Extensions
+
+[![Nuget Version](https://img.shields.io/nuget/v/RestSharp.Newtonsoft.Json.Extensions)](https://www.nuget.org/packages/RestSharp.Newtonsoft.Json.Extensions/)
+[![Nuget Download](https://img.shields.io/nuget/dt/RestSharp.Newtonsoft.Json.Extensions)](https://www.nuget.org/packages/RestSharp.Newtonsoft.Json.Extensions/)
+[![AppVeyor branch](https://img.shields.io/appveyor/ci/i4004/restsharp-newtonsoft-json-extensions)](https://ci.appveyor.com/project/i4004/restsharp-newtonsoft-json-extensions)
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/RestSharp.Newtonsoft.Json.Extensions)](https://libraries.io/nuget/RestSharp.Newtonsoft.Json.Extensions)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/i4004/RestSharp.Newtonsoft.Json.Extensions)](https://www.codefactor.io/repository/github/i4004/RestSharp.Newtonsoft.Json.Extensions)
+![Platform](https://img.shields.io/badge/platform-.NET%20Standard%202.0%20%7C%20.NET%204.5.2-lightgrey)
 
 `RestSharp.Newtonsoft.Json.Extensions` - is an extensions for RestSharp to use Newtonsoft.Json for serialization/deserialization.
-
-## Package status
-
-| Latest version | [![Nuget version](http://img.shields.io/badge/nuget-v1.0.3-blue.png)](https://www.nuget.org/packages/RestSharp.Newtonsoft.Json.Extensions/) |
-| :------ | :------: |
-| **Dependencies** | [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/RestSharp.Newtonsoft.Json.Extensions.svg)](https://libraries.io/nuget/RestSharp.Newtonsoft.Json.Extensions) |
-
-## Build status
-
-| Branch | **.NET 4.5.2, Standard 2.0** |
-| :------ | :------: |
-| **master** | [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/tw195dxk1m917pc3?svg=true)](https://ci.appveyor.com/project/i4004/restsharp-newtonsoft-json-extensions) |
-
 
 ## Usage
 
@@ -31,4 +24,3 @@ request.UseNewtonsoftJsonSerializer();
 IRestClient сlient = /* ... */;
 client.UseNewtonsoftJsonDeserializer();
 ```
-
