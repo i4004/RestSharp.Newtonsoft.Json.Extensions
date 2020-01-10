@@ -8,9 +8,9 @@
 		<Version>1.0.4</Version>
 		<PackageProjectUrl>https://github.com/i4004/RestSharp.Newtonsoft.Json.Extensions</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/i4004/RestSharp.Newtonsoft.Json.Extensions</RepositoryUrl>
-		<PackageIconUrl>https://raw.githubusercontent.com/restsharp/RestSharp/master/restsharp.png</PackageIconUrl>
+		<PackageIconUrl>https://raw.githubusercontent.com/restsharp/RestSharp/master/docs/.vuepress/public/restsharp.png</PackageIconUrl>
 		<RepositoryType>GIT</RepositoryType>
-		<PackageTags>JSON RestSharp</PackageTags>
+		<PackageTags>JSON RestSharp Newtonsoft</PackageTags>
 		<PackageReleaseNotes>
 			Updates
 			* Upgrade to RestSharp 106.10.0 (PR #5)
