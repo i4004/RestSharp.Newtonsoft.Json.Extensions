@@ -1,3 +1,5 @@
+# This package is now deprecated, because there is good [official alternative](https://www.nuget.org/packages/RestSharp.Serializers.NewtonsoftJson/) exist, please use the official package.
+
 # RestSharp.Newtonsoft.Json.Extensions
 
 [![Nuget Version](https://img.shields.io/nuget/v/RestSharp.Newtonsoft.Json.Extensions)](https://www.nuget.org/packages/RestSharp.Newtonsoft.Json.Extensions/)
